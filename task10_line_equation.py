@@ -3,20 +3,14 @@
 # Пример:
 # Ввод: k = 2, b = 3, x = 5
 # Вывод: y = 13
-'''nums_input= input('')
-nums = nums_input.split(', ')
-for i in range(len(nums)):
-
-print(len(nums))
-
-'''
-'''
+# вводить стоит, как пример "k = 2, b = 3, x = 5"
 nums_input = input('>>> ')
-nums = nums_input.split()
+nums = nums_input.split(', ')
 index_int = []
-for i in range(len(nums)):
-    if type(nums[i]) == "<class 'int'>":
-        index_int.append(nums[i])
-print(index_int)
-print(type(1))
-'''
+list_k = nums[0]
+index_int.append(int(list_k[-1]))
+list_x = nums[1]
+index_int.append(int(list_x[-1]))
+list_b = nums[2]
+index_int.append(int(list_b[-1]))
+print(f'y = {index_int[0] * index_int[1] + index_int[2]}')
