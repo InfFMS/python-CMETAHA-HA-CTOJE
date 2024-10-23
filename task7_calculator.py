@@ -3,3 +3,14 @@
 # Пример:
 # Ввод: Первое число: 10, Второе число: 2, Операция: *
 # Вывод: Результат: 20
+a = float(input('a >> '))
+b = float(input('b >> '))
+operation = input('Операция: ')
+if operation == '+':
+    print(a+b)
+elif operation == '-':
+    print(a-b)
+elif operation == '*':
+    print(a*b)
+elif operation == '/':
+    print(a/b)
